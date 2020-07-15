@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  /* background-color: #eee; */
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("photo-of-daisy-flowers-1477166.jpg");
+  background-position: center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.center {
+  align-self: center;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+ 
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(195, 146, 152, 0.575);
+  
+}
+.title {
+  color: rgb(80,53,60);
+  font-family: 'Dancing Script', cursive;
+
+
+}
+.white {
+  background-color: aliceblue;
+  border-radius: 50px;
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+.title, .controls, .button {
+  flex: none;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.todo-list {
+  flex: 1 1 0;
+  margin-top: 50px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.todo-delete {
+  margin: 10px;
+}
+
+.todo-checkbox {
+  margin: 10px;
+}
+
+.todo-container {
+  padding: 20px;
+  /* border-bottom: 1px solid #333; */
+}
+
+/* .todo-container:first-of-type {
+  border-top: 1px solid #333;
+} */
+.addToDo {
+  width: 500px;
+  margin: 50px auto;
+ }
+  /* border-top: 1px solid grey;
+} */
+.addToDo input {
+  border: 1px solid  rgb(80,53,60);
+  height: 50px;
+ border-radius: 10px;
+ text-align: center;
+}
+.addToDo input:hover, 
+.addToDo input:focus
+{
+  transform: scale(1.2);
+  border: 1px solid  rgb(80,53,60);
+  transition: all 400ms;
+}
+#checked-count, #checked-count1 {
+  color:rgb(5, 90, 31);
+  font-weight: bolder;
+}
+#item-count, .item-count1 {
+ color: rgb(215,125,5);
+ font-weight: bold;
+}
+.button {
+  border-radius: 10px;
+  font-weight: bolder;
+  background-color: gray;
+  font-family: 'Dancing Script', cursive;
+
+}
+.button:hover,
+.button:focus {
+  transform: scale(1.2);
+  transition: all 400ms;
+  color: white;
+  background-color: rgb(80,53,60);
+}
+.addToDo1 {
+  width: 400px;
+  font-weight: bold;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+ 
+  font-family: 'Dancing Script', cursive;
+font-size: 1.3em;}
+.pp {
+  width: 300px;
+  margin-left: 10px;
+  text-align: left;
+}
+.btnDel {
+  background-color:  rgb(80,53,60);
+  border-radius: 50%;
+  height: 25px;
+  margin-left: 10px;
+}
+.btnDel:hover {
+  background-color: gray;
+  transform: scale(1.2);
+  transition: all 400ms;
+}
+#alert {
+  color: rgb(215,125,5);
+  font-weight: bolder;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+}
+@media screen and (max-width:600px) {
+ .container {
+  width: 90%;
+ }
+ .white {
+   width: 80%;
+ }
+ .addToDo {
+   width: 80%;
+ }
+ .addToDo1 {
+   width: 100%;
+ }
+ .flow-right{
+   flex-direction: column;
+   
+ }
+ .todo-list{
+   width: 100%;
+ }
+ .pp {
+  width: 200px;
+}
+#checked-count1 {
+  margin-top: 10px;
+}
+
+}
+@media screen and (max-width:400px){
+  .addToDo1 {
+   flex-direction: column;
+   justify-content: center;
+   border: grey solid 2px;
+  }
+}

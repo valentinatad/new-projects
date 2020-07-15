@@ -1,0 +1,32 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>TODO App</title>
+  </head>
+  <body>
+    
+  </body>
+  </html>
+  <body>
+    <div class="container center">
+      <div class="white">
+      <h1 class="center title">My TODO List</h1>
+      <div class="flow-right controls">
+        <span class="item-count1">Number of Tasks: <span id="item-count">0</span></span>
+     <span id="checked-count1">Checked Tasks: <span id="checked-count">0</span></span>
+      </div>
+      <div class="addToDo">
+      <input type="text" placeholder="Add TODO" id="addToDo" maxlength="50">
+      <p id="alert"></p>
+      </div>
+      <button class="button center" onClick="newTodo()">New TODO</button>
+      <ul id="todo-list" class="todo-list todo-container"></ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
