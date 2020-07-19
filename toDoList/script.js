@@ -84,7 +84,7 @@ function newTodo() {
   div1.append(checkbox, btn)
   itemCountSpan.append(div1)
   list.appendChild(itemCountSpan);
-  addToDo.value="";
+  addToDo.value.restart()
    ;
    return list
 }
